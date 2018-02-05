@@ -13,6 +13,9 @@ namespace MarCourse
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapMvcAttributeRoutes();//mvc5
+            //routes.MapRoute("MoviesByRealiseDate", "movies/released/{year}/{month}", new { controller = "Movie", action = "ByRealiseDate"});
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

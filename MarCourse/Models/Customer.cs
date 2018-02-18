@@ -9,5 +9,8 @@ namespace MarCourse.Models
     {
         public int ID { get; set; }
         public string Name { get; set; }
+        public bool IsSubscribeToNewsletter { get; set; }
+        public MembershipType MembershipType { get; set; }
+        public byte MembershipTypeId { get; set; }
     }
 }

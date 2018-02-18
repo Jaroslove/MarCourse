@@ -24,6 +24,17 @@ namespace MarCourse.Controllers
             return View(customers);
         }
 
+        public ActionResult Create()
+        {
+            var memberType = context.MembershipTypes.ToList();
+            var viewModel = new MarCourse.ViewModel.NewCustomerViewModel
+            {
+                MembershipTypes = memberType,
+            };
+
+            return View(viewModel);
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

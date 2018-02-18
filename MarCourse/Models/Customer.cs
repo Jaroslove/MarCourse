@@ -15,5 +15,7 @@ namespace MarCourse.Models
         public bool IsSubscribeToNewsletter { get; set; }
         public MembershipType MembershipType { get; set; }
         public byte MembershipTypeId { get; set; }
+        [Display(Name = "Date of birthday")]
+        public DateTime? Birthday { get; set; }
     }
 }

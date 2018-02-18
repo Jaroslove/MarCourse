@@ -11,5 +11,6 @@ namespace MarCourse.Models
         public short SingUpFree { get; set; }
         public byte DurationInMonth { get; set; }
         public  byte DiscountRate { get; set; }
+        public string Name { get; set; }
     }
 }
